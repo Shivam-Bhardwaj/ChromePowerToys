@@ -157,14 +157,37 @@ Stay informed without information overload.
 
 ---
 
-## 8. Code Examples & Customizations (Coming Soon)
+---
+## 8. Code Examples & Customizations
 
-This section will eventually house:
-* Scripts for Chrome automation (e.g., AppleScript/JavaScript for automation).
-* Basic Chrome extension templates and development guides.
-    * Example: A custom New Tab page.
-    * Example: A simple content script to modify webpages.
-* Links to useful `chrome://flags` for experimental features (use with caution).
+This section houses practical code examples to help you customize Chrome.
+
+### A. Simple Custom New Tab Page
+
+Get started by replacing Chrome's default new tab page with your own simple, personalized version!
+
+* **What it does:** Overrides the default new tab page with a custom HTML page.
+* **Features:**
+    * Welcome message.
+    * Greeting based on the time of day.
+    * A section for quick links.
+    * Basic styling with Inter font.
+* **Location:** [`code_examples/simple_new_tab_extension/`](./code_examples/simple_new_tab_extension/)
+* **Files:**
+    * `manifest.json`: Tells Chrome about the extension and that it overrides the new tab page.
+    * `new_tab.html`: The actual content of your new tab page.
+    * `style.css`: Styles for `new_tab.html`.
+    * `images/`: Contains placeholder icons for the extension.
+* **How to Load This Extension:**
+    1.  Open Chrome and navigate to `chrome://extensions`.
+    2.  Enable **Developer mode** (usually a toggle in the top-right corner).
+    3.  Click the **"Load unpacked"** button.
+    4.  In the file dialog, navigate to the `ChromePowerToys` project directory, then into `code_examples/`, and select the `simple_new_tab_extension` folder.
+    5.  Click "Select Folder".
+    6.  The "ChromePowerToys - Simple New Tab" extension should now appear in your list of extensions.
+    7.  Open a new tab (`Ctrl+T` or `Cmd+T`) to see your custom page!
+
+*(More code examples and customizations will be added here, such as scripts for Chrome automation, more advanced extension templates, and useful `chrome://flags`.)*
 
 ---
 

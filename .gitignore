@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Node.js (if you ever add JS build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # Usually committed, but can be ignored in some library scenarios
+# yarn.lock # Usually committed
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts (if any in the future)
+dist/
+build/
+*.zip
+*.crx
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*~
+*.swp
+*.swo
+
+# Credentials - IMPORTANT: Never commit sensitive files
+# .env
+# credentials.json
+# secrets.txt
+
+# If you have specific files related to local development that shouldn't be shared
+# local_settings.py
+
