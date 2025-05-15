@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Power New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Your Power Tab!</h1>
+        </header>
+        <main>
+            <p>This is your personalized new tab page, courtesy of ChromePowerToys.</p>
+            <p>You can customize this page with your favorite links, tools, or inspiration!</p>
+            
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+                    <li><a href="https://developer.chrome.com/docs/extensions/" target="_blank" rel="noopener noreferrer">Chrome Extensions Docs</a></li>
+                    </ul>
+            </div>
+        </main>
+        <footer>
+            <p id="greeting"></p>
+        </footer>
+    </div>
+    <script>
+        // Simple script to display a greeting based on the time of day
+        const greetingElement = document.getElementById('greeting');
+        const hour = new Date().getHours();
+        let greetingText = "Hello!";
+
+        if (hour < 12) {
+            greetingText = "Good Morning!";
+        } else if (hour < 18) {
+            greetingText = "Good Afternoon!";
+        } else {
+            greetingText = "Good Evening!";
+        }
+        greetingElement.textContent = greetingText;
+    </script>
+</body>
+</html>
