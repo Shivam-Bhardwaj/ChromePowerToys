@@ -1,19 +1,113 @@
-# Become a Chrome Power User: Your Guide to Optimization & Productivity
+# ChromePowerToys: Supercharge Your Chrome Experience! 🚀
 
-Welcome! This project is dedicated to helping you transform your Google Chrome browser and associated Google services into a powerhouse of productivity and organization. Whether you're looking to tame your tabs, master your bookmarks, or integrate seamlessly with Google's ecosystem, this guide is for you.
+Welcome to **ChromePowerToys**! Inspired by the utility and philosophy of Windows PowerToys, this project is dedicated to building a suite of powerful, safe, and easy-to-use Chrome extensions. Our mission is to help you transform your Google Chrome browser into a personalized powerhouse of productivity, organization, and intelligent browsing.
 
-## Our Goal
+We are a community-driven initiative aiming to create a collection of high-quality, open-source tools. Many of our planned features involve leveraging AI, with a preference for **Google's Gemini family of models**, to provide intelligent assistance directly within your browser.
 
-To provide clear, actionable steps, tips, and eventually code examples to help you:
-* Organize your browsing environment efficiently.
-* Customize Chrome to your specific needs.
-* Leverage extensions for enhanced functionality.
-* Streamline workflows with Google services like Keep, Drive, Gmail, and Calendar.
-* Become a true Chrome Power User!
+![ChromePowerToys Banner (Placeholder - Consider creating a banner image)](./images/banner_placeholder.png)
+*(Suggestion: Create a simple banner and place it in an `images` folder in your project root)*
+
+## ✨ Our Philosophy
+
+* **Powerful & Useful:** Each "PowerToy" should solve a real user need or significantly enhance a common browsing task.
+* **Safe & Secure:** User privacy and security are paramount. Extensions will request minimal necessary permissions. Any data handling, especially with AI services, will be transparent and prioritize user consent. No unnecessary data collection.
+* **Easy to Use:** Intuitive design and straightforward functionality are key. Power doesn't have to mean complicated.
+* **Community-Driven:** We thrive on contributions of all kinds – ideas, documentation, code, design, and feedback. We aim to structure feature development in a way that's conducive to focused efforts, similar to projects in programs like Google Summer of Code (GSoC).
+* **Open Source:** All our code is open (MIT License by default, unless specified otherwise for a particular PowerToy) for anyone to inspect, use, modify, and contribute to.
+
+## 🛠️ What are ChromePowerToys?
+
+ChromePowerToys will be a collection of individual Chrome extensions, each designed to add a specific piece of "power" functionality to your browser. Users can choose to install only the PowerToys they need.
+
+**Examples of planned PowerToys include:**
+* AI-Powered Content Summarizer
+* Advanced Tab & Session Management ("Workspaces")
+* Customizable New Tab Page (Our first example!)
+* Smart Clipboard Utilities
+* And many more! (See our Roadmap)
+
+## 🗺️ Project Roadmap & Feature Ideas
+
+We have an ambitious list of features we'd like to build! From advanced tab management and AI-powered content summarization to privacy enhancers and developer utilities.
+
+👉 **See our detailed [Project Roadmap & Feature Tracks](PROJECT_ROADMAP.md) to explore potential contributions and GSoC-style project ideas!** 👈
+
+This roadmap outlines the different modules and specific PowerToys we envision.
+
+## 🚀 Getting Started (For Users)
+
+As PowerToys are developed, you'll be able to install them directly into your Chrome browser.
+
+1.  **Find a PowerToy:** Browse our [Project Roadmap](PROJECT_ROADMAP.md) or the `code_examples/` directory for developed PowerToys.
+2.  **Download:** For now, you might need to download the PowerToy's folder from this GitHub repository. Eventually, we aim to publish them on the Chrome Web Store.
+3.  **Installation (for unpacked extensions):**
+    * Open Chrome and navigate to `chrome://extensions`.
+    * Enable **Developer mode** (usually a toggle in the top-right corner).
+    * Click the **"Load unpacked"** button.
+    * In the file dialog, navigate to and select the specific PowerToy's folder (e.g., `ChromePowerToys/code_examples/simple_new_tab_extension/`).
+    * Click "Select Folder".
+    * The PowerToy extension should now appear in your list of extensions and be active!
+
+*(Specific installation instructions for each PowerToy will be available in its own directory/README.)*
+
+## 💻 How to Contribute (For Developers & Enthusiasts) ❤️
+
+We welcome contributions from everyone! Whether you're a seasoned developer, a UI/UX designer, a technical writer, or just someone with great ideas, there's a place for you here.
+
+**1. Understand the Vision:**
+   Start by reading this `README.md` and our [Project Roadmap & Feature Tracks](PROJECT_ROADMAP.md) to get a feel for what we're trying to build.
+
+**2. Find Something to Work On:**
+   * **GitHub Issues:** This is the primary place for task management.
+        * Look for issues tagged `good first issue` if you're new.
+        * Look for issues tagged `help wanted` or `status:todo`.
+        * Browse the [Project Roadmap](PROJECT_ROADMAP.md) and see if a feature excites you. If there isn't an issue for it yet, you can propose one!
+   * **Propose a New PowerToy/Feature:** If you have an idea for a new PowerToy that fits our philosophy, please [open a new "Feature Request" issue](https://github.com/YOUR_USERNAME/ChromePowerToys/issues/new/choose) to discuss it with the community.
+
+**3. Setting Up Your Development Environment:**
+   * **Fork the Repository:** Click the "Fork" button at the top right of this page to create your own copy.
+   * **Clone Your Fork:** `git clone https://github.com/YOUR_USERNAME/ChromePowerToys.git`
+   * **Navigate to the Directory:** `cd ChromePowerToys`
+   * **(Optional) Create a new branch for your feature/fix:** `git checkout -b my-awesome-powertoy`
+   * **Development:**
+        * Each PowerToy will typically reside in its own sub-directory within `code_examples/` (or a future `powertoys/` directory).
+        * Follow the standard Chrome extension development process (HTML, CSS, JavaScript, `manifest.json`).
+        * Test your extension by loading it as an unpacked extension in `chrome://extensions`.
+
+**4. Coding Guidelines & Best Practices (to be detailed in `CONTRIBUTING.md`):**
+   * **Keep it Simple:** Write clear, maintainable code.
+   * **Focus on User Experience:** Ensure the PowerToy is intuitive and easy to use.
+   * **Prioritize Security & Privacy:** Request only necessary permissions. Be mindful of data handling.
+   * **Add Comments:** Explain complex parts of your code.
+   * **Write/Update Documentation:** If you add a new feature, update the relevant READMEs.
+   * **Consider AI Integration (Optional but Encouraged):** If your feature can be enhanced by AI (using Google's Gemini models), explore that possibility. Ensure any AI usage is transparent to the user.
+
+**5. Making a Contribution:**
+   * **Commit Your Changes:** Use clear and descriptive commit messages (see our `.gitmessage.txt` template if you've configured it).
+   * **Push to Your Fork:** `git push origin my-awesome-powertoy`
+   * **Open a Pull Request (PR):** Go to the original `ChromePowerToys` repository on GitHub and you'll see a prompt to create a Pull Request from your new branch.
+        * Fill out the PR template clearly, explaining what your changes do and why.
+        * Link to any relevant GitHub Issues (e.g., "Closes #123").
+   * **Code Review:** Maintainers and other community members will review your PR. Be open to feedback and discussion!
+   * **Merge:** Once approved, your contribution will be merged! 🎉
+
+**6. Other Ways to Contribute:**
+   * **Documentation:** Improve this README, our Roadmap, or write documentation for individual PowerToys.
+   * **Testing & Feedback:** Use the developing PowerToys and report bugs or suggest improvements by opening issues.
+   * **UI/UX Design:** Help design intuitive interfaces for the PowerToys.
+   * **Spread the Word:** Tell others about the project!
+
+## 🤝 Code of Conduct
+
+We are committed to providing a welcoming and inclusive environment for everyone. All contributors and participants are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) (to be created). Please be respectful and constructive in all interactions.
+
+## 📜 License
+
+ChromePowerToys is licensed under the [MIT License](./LICENSE) (to be created), unless specified otherwise for a particular PowerToy.
 
 ---
 
-## Table of Contents
+## Table of Contents (from original README)
 
 1.  [Chrome: Your Information Hub & Gateway](#1-chrome-your-information-hub--gateway)
     * [Tabs & Tab Groups](#a-understanding-tabs--tab-groups)
@@ -26,175 +120,12 @@ To provide clear, actionable steps, tips, and eventually code examples to help y
 5.  [Gmail: Conquering Your Inbox](#5-gmail-conquering-your-inbox)
 6.  [Google Calendar & Tasks: Managing Your Time](#6-google-calendar--tasks-managing-your-time)
 7.  [Google News & Chrome Discover: Tailoring Your Info](#7-google-news--chrome-discover-tailoring-your-info)
-8.  [Code Examples & Customizations (Coming Soon)](#8-code-examples--customizations-coming-soon)
-9.  [Contributing](#9-contributing)
+8.  [Code Examples & Customizations](#8-code-examples--customizations)
+    * [A. Simple Custom New Tab Page](./code_examples/simple_new_tab_extension/)
+9.  [Contributing](#-how-to-contribute-for-developers--enthusiasts-️) (Covered in detail above)
+
+*(This section will be replaced by the more detailed "How to Contribute" section and other relevant project links as they are created.)*
 
 ---
 
-## 1. Chrome: Your Information Hub & Gateway
-
-Google Chrome is more than just a browser; it's your primary interface for accessing information and Google services.
-
-### A. Understanding Tabs & Tab Groups:
-
-* **Tabs:** Each tab lets you have a different webpage open.
-    * **Open a new tab:** Click the `+` icon or `Ctrl+T` (Windows/Linux) / `Cmd+T` (Mac).
-    * **Close a tab:** Click the `x` on the tab, or `Ctrl+W` / `Cmd+W`.
-* **Tab Groups (Key for Focus!):** Organize tabs for different projects or contexts.
-    * **How to create:** Right-click on a tab -> "Add tab to new group."
-    * **Name & Color:** Assign a name and color for easy identification.
-    * **Collapse/Expand:** Click the group name to collapse/expand, saving space and reducing distraction.
-    * **Saving Groups:** Some Chrome versions allow you to save tab groups. Look for a "Save group" toggle.
-
-### B. Effective Bookmark Strategies:
-
-Bookmarks save important web pages for quick access.
-
-* **Bookmark a Page:** Click the star icon (`☆`) in the address bar.
-* **Bookmark Bar:** For frequently used sites (`Ctrl+Shift+B` / `Cmd+Shift+B` to toggle visibility).
-* **Folders:** Organize bookmarks into folders (e.g., "Work Resources," "Personal Projects"). Create these via the `Bookmarks Manager` (`⋮` > `Bookmarks` > `Bookmark manager`).
-* **Bookmark All Tabs:** Right-click a tab -> "Bookmark all tabs..." (`Ctrl+Shift+D` / `Cmd+Shift+D`).
-
-### C. Customizing Your New Tab Page:
-
-Make your New Tab page a launchpad for productivity.
-
-* **Shortcuts:** Add shortcuts to your most visited sites.
-* **Background:** Personalize the background.
-* **Customize:** Click "Customize Chrome" (often a pencil icon) on the New Tab page.
-* **Extensions (Advanced):** Explore extensions like "Momentum" or "Infinity New Tab" for enhanced New Tab experiences. (More in the [Essential Extensions](#2-essential-extensions-for-power-users-coming-soon) section).
-
-### D. Chrome Profiles (Coming Soon)
-
-Learn how to use Chrome Profiles to keep different areas of your digital life (e.g., work, personal, development) separate and organized.
-
----
-
-## 2. Essential Extensions for Power Users (Coming Soon)
-
-A curated list of recommended Chrome extensions, how to install them, and how they can boost your productivity and organization. We'll cover categories like:
-* Tab Management
-* Password Management
-* Note-Taking & Web Clipping
-* Productivity Tools
-* Developer Tools
-
----
-
-## 3. Google Keep: Quick Capture & Lists
-
-([keep.google.com](https://keep.google.com)) - For notes, ideas, to-do lists, and reminders.
-
-* **Create:** Text notes, lists, drawings, notes with images.
-* **Organize:**
-    * **Labels:** Categorize (e.g., `#work`, `#ideas`).
-    * **Colors:** Visually differentiate notes.
-* **Features:** Reminders (time/location-based), pinning, collaboration.
-* **Chrome Extension:** Use the "Google Keep Chrome Extension" to quickly save web content to Keep.
-
-**Power Tip:** Integrate Keep notes with Google Calendar by setting reminders that appear on your calendar.
-
----
-
-## 4. Google Drive: Your Digital Filing Cabinet
-
-([drive.google.com](https://drive.google.com)) - Store and organize your files.
-
-* **Structure:**
-    * Create a logical top-level folder structure (e.g., `01_Work`, `02_Personal`, `03_Projects`).
-    * Use nested sub-folders for granularity.
-* **Naming Conventions:** Be consistent (e.g., `YYYY-MM-DD_DocumentName.ext`).
-* **Features:** Color-code folders, star important items, use "Shared with me" effectively.
-* **Offline Access:** Set up offline access for crucial files.
-
-**Power Tip:** Use Google Drive File Stream (or "Backup and Sync" depending on your account type) for seamless desktop integration.
-
----
-
-## 5. Gmail: Conquering Your Inbox
-
-([mail.google.com](https://mail.google.com)) - Organize your email effectively.
-
-* **Labels:** More flexible than folders; an email can have multiple labels.
-* **Filters:** Automate actions (labeling, archiving, deleting, starring, forwarding).
-    * Create from search: Search bar > "Show search options" icon > "Create filter."
-* **Search:** Master Gmail's powerful search operators (e.g., `from:`, `subject:`, `has:attachment`).
-* **Stars & Importance Markers:** Customize their use for prioritization.
-* **Inbox Tabs:** Configure Primary, Social, Promotions, etc. (Settings > Inbox).
-
-**Power Tip:** Enable "Keyboard shortcuts" in Gmail settings (Settings > See all settings > General > Keyboard shortcuts) and learn common ones like `c` (compose), `r` (reply), `e` (archive), `#` (delete), `s` (star).
-
----
-
-## 6. Google Calendar & Tasks: Managing Your Time
-
-* **Google Calendar ([calendar.google.com](https://calendar.google.com)):**
-    * **Events & Reminders:** Standard event creation with robust reminder options.
-    * **Multiple Calendars:** Create and color-code separate calendars (e.g., `Work`, `Personal`, `Projects`).
-    * **Recurring Events:** For regular commitments.
-    * **Appointment Slots (if applicable):** Useful for scheduling.
-* **Google Tasks:**
-    * Accessible in Gmail, Calendar, Drive side panels, or its mobile app.
-    * **Lists & Tasks:** Create multiple lists with tasks, subtasks, and due dates.
-    * **Calendar Integration:** Tasks with due dates appear on your Google Calendar. Drag tasks to time-block.
-
-**Power Tip:** Use the "Find a time" feature in Calendar when scheduling meetings with multiple people. For Tasks, break down large projects into smaller, manageable tasks with due dates.
-
----
-
-## 7. Google News & Chrome Discover: Tailoring Your Info
-
-Stay informed without information overload.
-
-* **Google News ([news.google.com](https://news.google.com)):**
-    * Follow topics, sources, locations.
-    * Customize your feed by indicating preferences ("More/Fewer stories like this").
-* **Chrome Discover (Mobile New Tab Page):**
-    * Personalized article feed.
-    * Customize by interacting with story cards (`⋮` icon) and managing interests in your Google Account.
-
-**Power Tip:** Regularly review your "Web & App Activity" in your Google Account to understand and refine what influences these personalized feeds.
-
----
-
----
-## 8. Code Examples & Customizations
-
-This section houses practical code examples to help you customize Chrome.
-
-### A. Simple Custom New Tab Page
-
-Get started by replacing Chrome's default new tab page with your own simple, personalized version!
-
-* **What it does:** Overrides the default new tab page with a custom HTML page.
-* **Features:**
-    * Welcome message.
-    * Greeting based on the time of day.
-    * A section for quick links.
-    * Basic styling with Inter font.
-* **Location:** [`code_examples/simple_new_tab_extension/`](./code_examples/simple_new_tab_extension/)
-* **Files:**
-    * `manifest.json`: Tells Chrome about the extension and that it overrides the new tab page.
-    * `new_tab.html`: The actual content of your new tab page.
-    * `style.css`: Styles for `new_tab.html`.
-    * `images/`: Contains placeholder icons for the extension.
-* **How to Load This Extension:**
-    1.  Open Chrome and navigate to `chrome://extensions`.
-    2.  Enable **Developer mode** (usually a toggle in the top-right corner).
-    3.  Click the **"Load unpacked"** button.
-    4.  In the file dialog, navigate to the `ChromePowerToys` project directory, then into `code_examples/`, and select the `simple_new_tab_extension` folder.
-    5.  Click "Select Folder".
-    6.  The "ChromePowerToys - Simple New Tab" extension should now appear in your list of extensions.
-    7.  Open a new tab (`Ctrl+T` or `Cmd+T`) to see your custom page!
-
-*(More code examples and customizations will be added here, such as scripts for Chrome automation, more advanced extension templates, and useful `chrome://flags`.)*
-
----
-
-## 9. Contributing
-
-This is envisioned as a community-driven guide. Contribution guidelines will be added soon. For now, feel free to raise issues with suggestions or fork the project and submit pull requests.
-
----
-
-*Happy Power Browsing!*
+Let's build something amazing together!
